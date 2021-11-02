@@ -193,7 +193,7 @@ header .logo {
     margin-top: unset;
   }
   .cards .second {
-    margin: unset;
+    margin: 0 1em;
     margin-bottom: 2em;
   }
   .card-wrapper {
@@ -204,6 +204,18 @@ header .logo {
 @media only screen and (max-width: 1020) {
   html, body {
     overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

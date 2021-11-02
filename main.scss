@@ -179,7 +179,7 @@ header .logo {
     }
 
     .cards .second {
-        margin: unset;
+        margin: 0 1em;
         margin-bottom: 2em;
     }
     .card-wrapper {
@@ -190,5 +190,12 @@ header .logo {
 @media only screen and (max-width: 1020) {
     html, body {
         overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
     }
 }
