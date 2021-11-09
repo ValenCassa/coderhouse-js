@@ -54,10 +54,21 @@ button.onclick = function start() {
         if (allNumeric() && info.cantidad <= 12) {
             go = true;
             let valor_hoy = 0;
+
+            /*
             for (let i = 0; i < info.cantidad; i++) {
                 valor_hoy += Math.round( info.cuotas_mes - (info.cuotas_mes * info.inflacion));
                 info.cuotas_mes -= info.cuotas_mes * info.inflacion;
             };
+
+            */
+            info.valor_final = info.valor_final / Math.pow((1 + info.inflacion), 1);
+
+            for (let i = 0; i < info.cantidad; i++) {
+                valor_hoy += Math.round((info.valor_final / Math.pow((1 + info.inflacion), i)) / 3);
+
+                console.log(valor_hoy)
+            }
             alert('El valor final a precio de hoy es: ' + valor_hoy);
             cuotas_fav.push(info);
         }else {
