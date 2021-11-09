@@ -83,6 +83,8 @@ header .logo {
             color: #232323;
         }
 
+
+
         .btn-wrapper {
             z-index: 3;
             margin-top: 1.5em;
@@ -153,6 +155,22 @@ header .logo {
         margin-top: 0.25em;
         
     }
+
+    .card-wrapper .pre-entrega  .border{
+        display: none;
+        position: absolute;
+        z-index: -1;
+        margin-top: -0.1em;
+        margin-left: -0.2em;
+        width: 220px;
+        height: 37px;
+        border-radius: 4px;
+        overflow: hidden;
+        background: linear-gradient(to right, #2D2D2D 20%, #2D2D2D 40%, #af9968 50%, #af9968 55%, #2D2D2D 70%, #2D2D2D 100%); 
+        background-size: 200% auto;
+        animation: shine 2.2s linear infinite;
+
+    }
 }
 
 .card-wrapper:hover {
@@ -165,6 +183,8 @@ header .logo {
         display: block;
     }
 }
+
+
 
 
 @keyframes shine {
@@ -185,6 +205,8 @@ header .logo {
     .card-wrapper {
         margin-bottom: 2em;
     }
+
+
 }
 
 @media only screen and (max-width: 1020) {
@@ -199,3 +221,4 @@ header .logo {
         align-items: center;
     }
 }
+

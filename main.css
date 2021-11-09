@@ -167,6 +167,23 @@ header .logo {
   margin-top: 0.25em;
 }
 
+.coming-cards .card-wrapper .pre-entrega .border {
+  display: none;
+  position: absolute;
+  z-index: -1;
+  margin-top: -0.1em;
+  margin-left: -0.2em;
+  width: 220px;
+  height: 37px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #2D2D2D), color-stop(40%, #2D2D2D), color-stop(50%, #af9968), color-stop(55%, #af9968), color-stop(70%, #2D2D2D), to(#2D2D2D));
+  background: linear-gradient(to right, #2D2D2D 20%, #2D2D2D 40%, #af9968 50%, #af9968 55%, #2D2D2D 70%, #2D2D2D 100%);
+  background-size: 200% auto;
+  -webkit-animation: shine 2.2s linear infinite;
+          animation: shine 2.2s linear infinite;
+}
+
 .card-wrapper:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);

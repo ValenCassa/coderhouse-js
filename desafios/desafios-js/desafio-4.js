@@ -1,13 +1,17 @@
 alert('Bienvenido a la calculadora de cuotas a valor de hoy!');
 let go = false;
 
+function isNumeric(num) {
+    return !isNaN(parseFloat(num)) && isFinite(num);
+  };
+
 do {
     let final = parseInt(prompt('Ingresa el precio final...'));
     let cuotas = parseInt(prompt('Ingresa la cantidad de cuotas...'));
     const inflation = 0.035;
     let cuotas_mes = final / cuotas;
 
-    if (!isNaN(final) && !isNaN(cuotas)) {
+    if (isNumeric(final) && isNumeric(cuotas)) {
         go = true;
         let valor_hoy = 0;
         for (let i = 0; i < cuotas; i++) {
