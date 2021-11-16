@@ -79,7 +79,7 @@ button.onclick = function start() {
 
             localStorage.setItem('cuotasMes', JSON.stringify(cuotasMes));
             localStorage.setItem('info', JSON.stringify(info));
-            document.getElementById('href').onclick(window.location.href='./desafio-resultado.html')
+            document.getElementById('href').onclick(window.location.href='/coderhouse-js/desafios/desafios-html/desafio-8/desafio-resultado.html')
             
             
         }else {

@@ -2,13 +2,6 @@ var stored_cuotas = JSON.parse(localStorage.getItem('cuotasMes'));
 var stored_info = JSON.parse(localStorage.getItem('info'));
 
 
-
-//var newDiv = '<div class="cuotas-wrapper"><div class="cuota"></div><span class="cuota__numero"></span></div>';
-
-
-//div.innerHTML = newDiv;
-
-
     for (let i=0; i < stored_cuotas.length; i++) {
         var div = document.createElement('div');
         div.className = 'cuotas-wrapper';
@@ -33,5 +26,5 @@ document.getElementById('valor_hoy').textContent = stored_info.valorHoy;
 document.getElementById('recargo').textContent = ((stored_info.valorFinalinicial - stored_info.valor_inicial) / stored_info.valor_inicial) * 100 + '%';
 document.getElementById('monto_cuota').textContent = Math.round(stored_info.cuotas_mes)
 
-console.log(stored_info)
+
 
