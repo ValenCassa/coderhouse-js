@@ -75,8 +75,7 @@ button.onclick = function start() {
 
             info.valorHoy = Math.round(valor_hoy);
             info.valorFinalinicial = document.getElementById('monto_final').value;
-            
-            alert('El valor final a precio de hoy es: ' + valor_hoy);
+
 
             localStorage.setItem('cuotasMes', JSON.stringify(cuotasMes));
             localStorage.setItem('info', JSON.stringify(info));
