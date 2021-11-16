@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-
+$enable-negative-margins: true;
 * {
     margin: 0;
     padding: 0;
@@ -49,4 +49,66 @@ header .logo {
         cursor: pointer;
     }
     
+}
+
+.monto-i {
+    background-color: #252525;
+    padding: 0.5em 0.8em;
+    margin-bottom: 1.5em;
+    
+    .info-title {
+
+        margin-bottom: 0;
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+
+        span {
+            font-size: 16px;
+            color: rgb(177, 177, 177);
+        }
+    }
+}
+
+.info-num {
+    color: rgb(177, 177, 177);
+}
+
+.cuotas-mes {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 1.5em;
+
+    .cuotas-wrapper {
+        margin-bottom: 0.5em;
+        margin-right: 1em;
+    }
+
+    .cuota {
+        color: white;
+        font-size: 12px;
+        width: 80px;
+        height: 18px;
+        background: rgba(122, 235, 127, 0.3);
+        border: 0.5px solid #7DEEA3;
+        box-sizing: border-box;
+
+        &__numero {
+            color: white;
+            font-size: 15px;
+        }
+    }
+}
+
+.title-cuotas {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0.8em;
+}
+
+
+.calc {
+    margin-bottom: 3em;
 }

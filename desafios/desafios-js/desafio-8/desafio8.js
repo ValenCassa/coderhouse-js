@@ -1,6 +1,6 @@
 var button = document.getElementById('btn-calc');
 
-let cuotasMes =  [];       //Mi idea con esto es hacer un historial o un menu de cuentas guardadas, por ahora no tiene utiidad por si solo :)
+var cuotasMes = [];
 
 button.onclick = function start() {
 
@@ -19,7 +19,9 @@ button.onclick = function start() {
                 this.cantidad = cantidad;
                 this.inflacion = inflacion;
                 this.cuotas_mes = cuotas_mes;
+                this.valorFinalinicial = this.valorFinalinicial;
                 this.valorHoy = this.valorHoy;
+
             }
         
             toInt() {
@@ -52,7 +54,7 @@ button.onclick = function start() {
             }
         };
     
-        if (allNumeric() && info.cantidad <= 12) {
+        if (allNumeric() && info.cantidad <= 12 && info.cantidad > 1) {
             go = true;
             let valor_hoy = 0;
 
@@ -69,15 +71,31 @@ button.onclick = function start() {
                 let formula = Math.round((info.valor_final / Math.pow((1 + info.inflacion), i)) / 3);
                 valor_hoy += formula;
                 cuotasMes.push(formula);
-
             }
-            info.valorHoy = valor_hoy;
+
+            info.valorHoy = Math.round(valor_hoy);
+            info.valorFinalinicial = document.getElementById('monto_final').value;
+            
             alert('El valor final a precio de hoy es: ' + valor_hoy);
-            array_info.push(info);
+
+            localStorage.setItem('cuotasMes', JSON.stringify(cuotasMes));
+            localStorage.setItem('info', JSON.stringify(info));
+            
+            
         }else {
             alert('Ingresa un valor valido');
             };
+
+            
 };
+
+
+
+
+
+
+
+
 
 
 

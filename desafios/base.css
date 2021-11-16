@@ -61,4 +61,70 @@ header .logo {
 .buttons .refresh-button {
   cursor: pointer;
 }
+
+.monto-i {
+  background-color: #252525;
+  padding: 0.5em 0.8em;
+  margin-bottom: 1.5em;
+}
+
+.monto-i .info-title {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.monto-i .info-title span {
+  font-size: 16px;
+  color: #b1b1b1;
+}
+
+.info-num {
+  color: #b1b1b1;
+}
+
+.cuotas-mes {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.cuotas-mes .cuotas-wrapper {
+  margin-bottom: 0.5em;
+  margin-right: 1em;
+}
+
+.cuotas-mes .cuota {
+  color: white;
+  font-size: 12px;
+  width: 80px;
+  height: 18px;
+  background: rgba(122, 235, 127, 0.3);
+  border: 0.5px solid #7DEEA3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.cuotas-mes .cuota__numero {
+  color: white;
+  font-size: 15px;
+}
+
+.title-cuotas {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 0.8em;
+}
+
+.calc {
+  margin-bottom: 3em;
+}
 /*# sourceMappingURL=base.css.map */
