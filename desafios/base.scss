@@ -112,3 +112,16 @@ header .logo {
 .calc {
     margin-bottom: 3em;
 }
+
+.arrow {
+    position: absolute;
+    margin-top: 0.5em;
+    margin-left: -4em;
+}
+
+#href {
+    button {
+        display: flex;
+        justify-content: space-between;
+    }
+}

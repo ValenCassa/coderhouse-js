@@ -127,4 +127,19 @@ header .logo {
 .calc {
   margin-bottom: 3em;
 }
+
+.arrow {
+  position: absolute;
+  margin-top: 0.5em;
+  margin-left: -4em;
+}
+
+#href button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=base.css.map */
