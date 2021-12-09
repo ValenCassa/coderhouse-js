@@ -99,6 +99,11 @@ header .logo {
   color: #232323;
 }
 
+.cards .card-wrapper .digits {
+  font-size: 130px;
+  top: -10%;
+}
+
 .cards .card-wrapper .btn-wrapper {
   z-index: 3;
   margin-top: 1.5em;
